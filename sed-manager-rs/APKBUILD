@@ -1,0 +1,29 @@
+# Contributor: William Pitcock <nenolod@dereferenced.org>
+# Maintainer:
+pkgname=sed-manager-rs
+pkgver=0.1.0
+pkgrel=0
+pkgdesc="Application to congigure self-encrypting drives"
+url="https://github.com/petiaccja/sed-manager-rs"
+arch="all"
+license="Copyright (C) Péter Kardos - All Rights Reserved"
+depends=""
+depends_dev="" # Rust?
+makedepends="$depends_dev"
+install=""
+subpackages=""
+source="https://github.com/petiaccja/sed-manager-rs/archive/refs/heads/pba.zip"
+#builddir="$srcdir/$pkgname-$pkgver"
+builddir="$srcdir/$pkgname-pba"
+options="!check"
+
+build() {
+    cargo build --profile release --package sed-manager-unlock
+}
+
+package() {
+    mkdir -p $pkgdir/sbin
+	cp "./target/release/sed-manager-unlock" "$pkgdir/sbin/"
+}
+
+sha512sums="8784bdaca9ff89eae99e2ca8ffafe78d50163874c28a3617f98e17acc9445cd120f3b4ad14eef0f0734de84bf5703c2b79cdb0136d775f4180d80ada31e6e211  pba.zip"
