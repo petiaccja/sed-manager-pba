@@ -2,7 +2,7 @@ name: release
 
 on:
   workflow_run:
-    workflows: [build_and_test]
+    workflows: [build]
     branches: [v**.**]
     types: [completed]
 
