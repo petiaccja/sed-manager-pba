@@ -15,7 +15,7 @@ docker stop build-pba
 
 # Copy back images to host
 mkdir -p ./build
-docker cp build-pba:/home/build/iso/alpine-pba-edge-x86_64.iso ./build
+docker cp build-pba:/home/build/iso/alpine-pba-edge-x86_64.iso ./build/sed-manager-pba.iso
 
 # Delete container
 docker rm build-pba
