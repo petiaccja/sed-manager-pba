@@ -47,7 +47,8 @@ makefile root:root 0644 "$tmp"/etc/inittab <<EOF
 ::wait:/sbin/openrc default > /dev/null
 
 # Set up a couple of getty's
-tty1::respawn:/sbin/agetty --autologin root tty1 linux
+#tty1::respawn:/sbin/agetty --autologin root tty1 linux
+tty1::respawn:/bin/ash -c "sed-manager-unlock && reboot"
 #tty1::respawn:/sbin/sed-manager-unlock
 tty2::respawn:/sbin/getty 38400 tty2
 
