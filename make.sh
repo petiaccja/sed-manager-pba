@@ -1,3 +1,8 @@
+#-------------------------------------------------------------------------------
+# Copyright © 2025 Péter Kardos
+# SPDX-License-Identifier: MIT
+#-------------------------------------------------------------------------------
+
 # Build the docker image
 docker build -t sed-manager-pba .
 

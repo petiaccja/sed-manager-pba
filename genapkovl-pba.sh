@@ -1,3 +1,12 @@
+#-------------------------------------------------------------------------------
+# Copyright © 2025 Péter Kardos
+# SPDX-License-Identifier: MIT
+#
+# This file may contain non-trivial parts from the original `aports` sources at
+# https://gitlab.alpinelinux.org/alpine/aports. Please reach out if you have
+# issues with this file being licensed under the MIT license.
+#-------------------------------------------------------------------------------
+
 #!/bin/sh -e
 
 HOSTNAME="$1"
