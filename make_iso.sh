@@ -1,3 +1,8 @@
+#-------------------------------------------------------------------------------
+# Copyright © 2025 Péter Kardos
+# SPDX-License-Identifier: MIT
+#-------------------------------------------------------------------------------
+
 # This file is to be run in the container
 
 # Build ISO

@@ -1,3 +1,8 @@
+#-------------------------------------------------------------------------------
+# Copyright © 2025 Péter Kardos
+# SPDX-License-Identifier: MIT
+#-------------------------------------------------------------------------------
+
 FROM alpine:edge
 
 # Install tools necessary for mkimage
