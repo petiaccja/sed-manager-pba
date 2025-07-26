@@ -4,7 +4,7 @@
 #-------------------------------------------------------------------------------
 
 pkgname=sed-manager-rs
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=0
 pkgdesc="Application to unlock self-encrypting drives"
 url="https://github.com/petiaccja/sed-manager-rs"
@@ -28,4 +28,4 @@ package() {
 	cp "./target/release/sed-manager-unlock" "$pkgdir/sbin/"
 }
 
-sha512sums="8784bdaca9ff89eae99e2ca8ffafe78d50163874c28a3617f98e17acc9445cd120f3b4ad14eef0f0734de84bf5703c2b79cdb0136d775f4180d80ada31e6e211  v$pkgver.zip"
+sha512sums="14dec68a0cb679cc257a8cbe58173043aa98230deb5a4603c6b3be461967f52d8e7794b66d571e8ee75eb8fcc314a98aa93af4e2b6cff8488531ea86d63dc68a  v$pkgver.zip"
